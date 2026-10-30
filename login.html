@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+	<title>Log In / Sign Up – EduQuestHub</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/loginStyle.css">
+</head>
+<body>
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">Log In</button>
+				<button type="button" class="toggle-btn" id="reg" onclick="register()">Register</button>
+			</div>
+			<div class="social-icons">
+				<a href="index.html" title="Back to home"><img src="assets/images/favicon.png" alt="Home"></a>
+				<a href="https://github.com/Vb-777" target="_blank" rel="noopener"><img src="assets/images/github.png" alt="GitHub"></a>
+				<a href="https://www.linkedin.com/in/b7-vaibhav" target="_blank" rel="noopener"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+			</div>
+
+			<!-- Login Form -->
+			<form id="login" class="input-group">
+				<div class="inp">
+					<img src="assets/images/user.png" alt=""><input type="text" id="email" class="input-field" placeholder="Username or Email" style="width: 88%; border:none;" required>
+				</div>
+				<div class="inp">
+					<img src="assets/images/password.png" alt=""><input type="password" id="password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required>
+				</div>
+				<input type="checkbox" class="check-box" id="remember"><label for="remember">Remember Password</label>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+
+			<div class="other" id="other">
+				<div class="instead">
+					<h3>or</h3>
+				</div>
+				<button class="connect" onclick="google()">
+					<img src="assets/images/google.png" alt=""><span>Sign in with Google</span>
+				</button>
+			</div>
+
+			<!-- Registration Form -->
+			<form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="Full Name" required>
+				<input type="email" class="input-field" placeholder="Email Address" required>
+				<input type="password" class="input-field" id="regPassword" placeholder="Create Password (min 8 chars)" required>
+				<input type="password" class="input-field" id="regConfirm" placeholder="Confirm Password" required>
+				<input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()"><label for="chkAgree">I agree to the Terms &amp; Conditions</label>
+				<button type="submit" id="btnSubmit" class="submit-btn reg-btn">Register</button>
+			</form>
+
+			<p id="form-message" style="position:absolute; bottom:12px; width:100%; text-align:center; font-size:13px;"></p>
+		</div>
+		<script src="assets/js/script.js"></script>
+</body>
+</html>

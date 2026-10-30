@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+	<title>Quiz on EduQuestHub</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/quizStyle.css">
+	</head>
+<body>
+	
+<!-- NAVIGATION -->
+	<header>
+		<div class="nav" id="nav">
+			<div id="learned-logo">
+			<a href="index.html"><img src="assets/images/logo.png" alt="EduQuestHub" style="width: 120px;"></a></div>
+			<div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="assets/images/menu.png"></div>
+			<ul id="list-switch">
+				
+				<li><a href="gate.html"><img src="assets/images/paper.png" class="icon">GATE</a></li>
+				<li><a href="computer_courses.html"><img src="assets/images/computer.png" class="icon">PG Software Lab Courses</a></li>
+				<li><a href="index.html"><img src="assets/images/favicon.png" class="icon">Home</a></li>
+				
+				
+			</ul>
+			
+		</div>
+	</header>
+	
+
+<!-- MAIN Heading of Page -->
+	<div class="title" id="title" style="display: none;">
+		<span>Daily Quiz on EduQuestHub</span>
+		<div class="shortdesc"><br>
+			<p>If you think education is expensive, try ignorance</p>
+		</div>
+		<button onclick="startquiz()">Start Now</button>
+	</div>
+
+
+<div class="panel" id="panel" style="display: inline-flex;">
+	
+	<div class="left-side" id="left" style="display: block;">
+		<ul>
+			<li data-frame="1" class="active" onclick="quizt(1)">HOME</li>
+			<li data-frame="4" onclick="quizt(4)">GATE</li>
+			<li data-frame="9" onclick="quizt(9)">Data Structures</li>
+			<li data-frame="10" onclick="quizt(10)">Algorithm</li>
+			
+		</ul>
+	</div>
+
+	<div class="right-side" id="right" style="display: block;">
+		<div id="quiz-container">
+			<div id="f1" style="display: block;">
+				<div class="quiz-frame main-frame">
+					<div class="quiz-welcome">
+						<h2>Daily Quiz</h2>
+						<p>Pick a topic on the left to start an MCQ quiz. Quizzes are embedded Google Forms, so you can attempt them right here without leaving the page.</p>
+					</div>
+				</div>
+			</div>
+			<div id="f4" style="display: none;"><iframe class="quiz-frame" title="GATE CSE quiz" loading="lazy" src="https://docs.google.com/forms/d/e/1FAIpQLSdjSKZhQp5jqqR34zD_uWMtgXr18F9pdK6YqcafLSP6J7VZjw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+			<div id="f9" style="display: none;"><iframe class="quiz-frame" title="Data Structures quiz" loading="lazy" src="https://docs.google.com/forms/d/e/1FAIpQLSfY5oIAz4R9Ty-LBpx7h4th6OJ0-RkrxIlLslRV4NjwwW8_uw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+			<div id="f10" style="display: none;"><iframe class="quiz-frame" title="Algorithms quiz" loading="lazy" src="https://docs.google.com/forms/d/e/1FAIpQLSflwS89sG7H98J9vFgFqJgsKaZ5gpq3yUlOiW3up7RQQ-qRnw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+	
+		</div>
+	</div>
+
+</div>
+
+	<script type="text/javascript" src="assets/js/script.js"></script>
+
+</body></html>
